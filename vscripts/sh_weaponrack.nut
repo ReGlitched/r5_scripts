@@ -41,7 +41,7 @@ void function RespawnWeaponOnRackST(entity item, string ref, int amount = 1, int
 
 entity function CreateWeaponRackSkillTrainer(vector origin, vector angles, string weaponName = "")
 {
-	entity rack = CreateEntity( "prop_dynamic" )
+	entity rack = CreateEntity( "prop_weapon_rack" )
 	rack.SetScriptName( WEAPONRACK_SCRIPTNAME )
 	rack.SetValueForModelKey( WEAPONRACKMODEL )
 	rack.SetOrigin( origin )
@@ -58,7 +58,7 @@ entity function CreateWeaponRackSkillTrainer(vector origin, vector angles, strin
 
 entity function CreateWeaponRack(vector origin, vector angles, string weaponName = "")
 {
-	entity rack = CreateEntity( "prop_dynamic" )
+	entity rack = CreateEntity( "prop_weapon_rack" )
 	rack.SetScriptName( WEAPONRACK_SCRIPTNAME )
 	rack.SetValueForModelKey( WEAPONRACKMODEL )
 	rack.SetOrigin( origin )
